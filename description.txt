@@ -1,0 +1,34 @@
+Model LISTING: 
+
+title
+description
+image 
+price
+location
+country
+
+INDEX Route-
+GET /listings :show all listings in one place.
+
+SHOW Route-
+GET /listings/:id - show a particular complete listing
+
+CREATE Route-
+GET /listings/new - Form opens, when submitted entry gets added to the db
+
+
+Reviews: 
+Create review schema,
+insert review in listing.js
+step1 : set up a review Form
+step2 : submitting the form 
+POST - /listings/:id/reviews
+FORM VALIDATION :
+client side validation ,
+server side validation using JOI
+
+Auth:
+passport installation:
+npm i passport
+npm i passport-local
+npm i passport-local-mongoose
