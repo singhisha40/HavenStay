@@ -12,7 +12,7 @@ body{
 /* navbar */
 .navbar{
     height: 5rem;
-    background-color: white;
+    background-color: rgb(255, 244, 244);
 }
 
 /* compass icon */
@@ -20,9 +20,38 @@ body{
     color: #fe424d;
     font-size: 2rem;
 }
+.fa-compass:hover{
+     text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+/* main-heading */
+.main-heading{
+    font-weight: bold;
+    cursor: pointer;
+ 
+}
+.main-heading:hover {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+/* search bar */
+.search-input{
+     transition: box-shadow 0.3s ease;
+}
 
+.search-input:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+/* search button */
+.search-btn:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+/* nav links */
 .nav-link{
     color: #222222 !important;
+}
+.nav-link:hover{
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
 }
 
 .f-info-links a{
