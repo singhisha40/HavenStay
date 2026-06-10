@@ -4,6 +4,8 @@ HavenStay is a full-stack rental booking platform that enables users to discover
 
 Built using Node.js, Express.js, MongoDB, and EJS, the application follows industry-standard development practices including RESTful APIs, MVC architecture, server-side validation, and secure user authentication.
 
+🔗 **Live Demo:** [https://havenstay-8lo1.onrender.com](https://havenstay-8lo1.onrender.com)
+
 ## 🚀 Features
 
 ### 🔐 Secure Authentication & Authorization
