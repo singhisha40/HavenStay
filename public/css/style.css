@@ -7,31 +7,29 @@ body{
 
 .container{
     flex: 1;
+    
 }
 
 /* navbar */
 .navbar{
     height: 5rem;
-    background-color: rgb(255, 244, 244);
+    background-color: rgb(251, 229, 229);
 }
 
-/* compass icon */
-.fa-compass{
-    color: #fe424d;
-    font-size: 2rem;
-}
-.fa-compass:hover{
-     text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-}
 /* main-heading */
 .main-heading{
     font-weight: bold;
     cursor: pointer;
- 
+    
 }
 .main-heading:hover {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
     transform: scale(1.05);
+}
+/* compass icon */
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
 }
 /* search bar */
 .search-input{
@@ -61,6 +59,7 @@ body{
 
 .f-info-links a:hover{
     text-decoration: underline;
+    
 }
 
 .f-info {
@@ -101,6 +100,7 @@ body{
 
 .card-body{
     padding: 0 !important;
+
 }
 
 .card-text p{
@@ -117,7 +117,7 @@ body{
 }
 
 .card-img-overlay:hover{
-    opacity: 0.2;
+    opacity: 0.3;
     background-color: white;
 }
 
@@ -135,7 +135,8 @@ body{
 }
 /* show page */
 .show-img{
-    height: 20vh ;
+    height: 40vh ;
+   
 }
 
 .btns{

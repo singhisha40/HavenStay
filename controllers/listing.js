@@ -19,7 +19,7 @@ module.exports.showListings = async (req, res) => {
                 },
         }).populate("owner");
         if (!listing) {
-            req.flash("errorMessage", "Listing does not exist");
+            req.flash("errorMessage", "Stay does not exist");
             return res.redirect("/listings"); // ✅ return is CRITICAL
         }
         res.render("listings/show.ejs", { listing });
@@ -34,7 +34,7 @@ module.exports.createListing = async (req, res) => {
          newListing.image = {url, filename};
          console.log(`${url}${filename}`);
         await newListing.save();
-        req.flash("success", "New Listing Created!");
+        req.flash("success", "New Stay Created!");
         res.redirect("/listings");
 }
 
@@ -42,7 +42,7 @@ module.exports.renderEditForm = async (req, res) => {
         let { id } = req.params;
         const listing = await Listing.findById(id);
         if (!listing) {
-            req.flash("errorMessage", "Listing does not exist");
+            req.flash("errorMessage", "Stay does not exist");
             return res.redirect("/listings"); // ✅ return is CRITICAL
         }
         let originalImageUrl = listing.image.url;
@@ -62,7 +62,7 @@ module.exports.updateListing = async (req, res) => {
 
     // 🔴 ADD THIS CHECK (critical fix)
     if (!listing) {
-        req.flash("errorMessage", "Listing not found");
+        req.flash("errorMessage", "Stay not found");
         return res.redirect("/listings");
     }
 
@@ -77,7 +77,7 @@ module.exports.updateListing = async (req, res) => {
         await listing.save();
     }
 
-    req.flash("success", "Listing Updated!");
+    req.flash("success", "Stay Updated!");
     res.redirect(`/listings/${id}`);
 };
 
@@ -85,6 +85,6 @@ module.exports.destroyListing = async (req, res) => {
         let { id } = req.params;
         let deletedListing = await Listing.findByIdAndDelete(id);
         console.log(deletedListing);
-        req.flash("success", "Listing Deleted");
+        req.flash("success", "Stay Deleted");
         res.redirect("/listings");
 }
